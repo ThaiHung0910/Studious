@@ -30,6 +30,13 @@ a {
   transition: all 0.5s;
 }
 
+p {
+  font-size: 16px;
+  line-height: 28px;
+  color: var(--font-color);
+  letter-spacing: 0.4px;
+}
+
 @media (min-width: 1280px) {
   .container {
     max-width: 1200px;
@@ -86,16 +93,31 @@ a {
   text-decoration: none;
 }
 
+.fixed-top {
+  position: sticky;
+}
+
 .header__nav {
+  background-color: transparent;
+  padding: 0px;
   transition: all 0.4s ease 0s;
   height: 90px;
   display: flex;
   align-items: center;
 }
 
+.nav-fixed {
+  padding: 0px;
+  border-bottom: none;
+  z-index: 999 !important;
+  background-color: var(--bg-color);
+  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.05);
+  height: 70px;
+}
+
 .navbar .navbar-brand {
-  margin: 0;
-  padding: 0;
+  /* margin: 0;
+  padding: 0; */
   font-size: 26px;
   color: var(--primary-color);
   font-weight: 600;
@@ -106,11 +128,6 @@ a {
 }
 a.navbar-brand:hover {
   color: var(--secondary-color);
-}
-
-.navbar-collapse {
-  display: flex;
-  flex-grow: 1;
 }
 
 .navbar-nav .nav-item {
@@ -267,16 +284,16 @@ a.navbar-brand:hover {
 
 /* Carousel */
 .carousel-indicators {
-  right: -11%;
+  right: -13%;
   left: unset;
-  bottom: 25%;
+  bottom: 16%;
   display: block;
 }
 
 .carousel-indicators li {
   width: 12px;
   height: 12px;
-  margin: 5px 2px;
+  margin: 10px 2px;
   background: var(--bg-color);
   transition: opacity 0.2s ease;
   border-radius: 50%;
@@ -291,8 +308,8 @@ a.navbar-brand:hover {
 
 .carousel .carousel-item {
   background: url(../img/banner2.jpg) no-repeat top right / cover;
-  /* position: relative;
-  z-index: 0; */
+  position: relative;
+  z-index: 0;
   padding: 48px 0;
   min-height: 90vh;
 }
@@ -300,7 +317,23 @@ a.navbar-brand:hover {
   background: url(../img/banner3.jpg) no-repeat top right / cover;
 }
 
-.carousel__content {
+.carousel .carousel-item::after {
+  content: "";
+  background: linear-gradient(
+    75deg,
+    rgb(16 16 16 / 34%) 10%,
+    rgb(230 2 100 / 0%)
+  );
+  position: absolute;
+  top: 0;
+  min-height: 100%;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+.carousel .carousel-item .carousel__content {
+  padding-top: 10%;
   max-width: 600px;
   text-align: left;
   position: relative;
@@ -312,6 +345,7 @@ a.navbar-brand:hover {
   line-height: 80px;
   font-weight: bold;
   color: #fff;
+  margin: 0;
 }
 .btn-style {
   padding: 14px 30px;
@@ -361,7 +395,7 @@ a.navbar-brand:hover {
 }
 
 .item__inner i {
-  font-size: 40px;
+  font-size: 34px;
   color: #fff;
 }
 
@@ -380,34 +414,32 @@ a.navbar-brand:hover {
 /* Item */
 
 /* Greeting */
-.greeting {
-  padding: 48px 0;
+.greeting__title {
+  padding-bottom: 24px;
+  margin-bottom: 48px;
 }
-
-.greeting h2 {
+.greeting__title h2 {
   font-size: 40px;
   color: var(--heading-color);
   text-align: center;
   position: relative;
-  padding-bottom: 24px;
-  margin-bottom: 48px;
 }
 
-.greeting h2 span {
+.greeting__title h2 span {
   color: var(--secondary-color);
 }
 
-.greeting h2::before {
+.greeting__title h2::before {
   left: -20px;
   bottom: -8px;
 }
 
-.greeting h2::after {
+.greeting__title h2::after {
   left: 20px;
   bottom: -15px;
 }
-.greeting h2:before,
-.greeting h2::after {
+.greeting__title h2:before,
+.greeting__title h2::after {
   content: "";
   background: var(--font-color);
   width: 60px;
@@ -462,9 +494,33 @@ a.navbar-brand:hover {
 }
 
 .services__item {
+  display: flex;
+  align-items: center;
   background: var(--bg-color);
   padding: 30px;
   border-radius: 8px;
+}
+.services__item i {
+  background: var(--primary-color);
+  color: var(--primary-color);
+  font-size: 28px;
+  background: rgb(13 54 159 / 9%);
+  width: 65px;
+  height: 66px;
+  line-height: 65px;
+  border-radius: 50%;
+  text-align: center;
+}
+.services__info {
+  margin-left: 16px;
+}
+
+.services__info h5 {
+  font-size: 20px;
+  line-height: 30px;
+  color: var(--heading-color);
+  font-weight: 600;
+  margin-bottom: 6px;
 }
 
 /* Services */

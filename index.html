@@ -89,97 +89,96 @@
           </div>
         </div>
       </div>
-
-      <div class="header__nav">
-        <div class="container-fluid">
-          <nav class="navbar navbar-expand-lg">
-            <a class="navbar-brand d-flex align-items-center" href="#">
-              <img src="./img/logo.png" alt="" />
-              Studious
-            </a>
-            <button
-              class="navbar-toggler collapsed bg-gradient"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarTogglerDemo02"
-              aria-controls="navbarTogglerDemo02"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
-              <span class="navbar-toggler-icon fa icon-close fa-times"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ml-lg-auto">
-                <li class="nav-item active">
-                  <a class="nav-link" href="#"
-                    >Home <span class="sr-only">(current)</span></a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">About Us</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a
-                    class="nav-link dropdown-toggle"
-                    href="#"
-                    role="button"
-                    data-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Pages
-                  </a>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Blog Posts</a>
-                    <a class="dropdown-item" href="#">404 Page</a>
-                    <a class="dropdown-item" href="#">Landing Page</a>
-                    <!-- <div class="dropdown-divider"></div> -->
-                    <a class="dropdown-item" href="#">Elements Page</a>
-                  </div>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link">Contact</a>
-                </li>
-              </ul>
-              <ul class="navbar-nav">
-                <div class="search-right ml-lg-3">
-                  <form class="search-box">
-                    <div class="input-search">
-                      <input
-                        type="search"
-                        name="s"
-                        placeholder="Enter Keyword"
-                        name="search"
-                        required="required"
-                        autofocus=""
-                        class="search-popup"
-                      />
-                    </div>
-                    <button type="submit" class="btn search-btn">
-                      <i class="fa fa-search" aria-hidden="true"></i>
-                    </button>
-                  </form>
-                </div>
-              </ul>
-            </div>
-
-            <div class="cont-ser-position w3DarkLight">
-              <nav class="navigation">
-                <div class="theme-switch-wrapper">
-                  <label class="theme-switch" for="checkbox">
-                    <input type="checkbox" id="checkbox" />
-                    <div class="mode-container">
-                      <i class="fa fa-sun"></i>
-                      <i class="fa fa-moon"></i>
-                    </div>
-                  </label>
-                </div>
-              </nav>
-            </div>
-          </nav>
-        </div>
-      </div>
     </header>
+    <section id="site-header" class="header__nav fixed-top">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg">
+          <a class="navbar-brand d-flex align-items-center" href="#">
+            <img src="./img/logo.png" alt="" />
+            Studious
+          </a>
+          <button
+            class="navbar-toggler collapsed bg-gradient"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarTogglerDemo02"
+            aria-controls="navbarTogglerDemo02"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon fa icon-expand fa-bars"></span>
+            <span class="navbar-toggler-icon fa icon-close fa-times"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-lg-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#"
+                  >Home <span class="sr-only">(current)</span></a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Pages
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#">Blog Posts</a>
+                  <a class="dropdown-item" href="#">404 Page</a>
+                  <a class="dropdown-item" href="#">Landing Page</a>
+                  <!-- <div class="dropdown-divider"></div> -->
+                  <a class="dropdown-item" href="#">Elements Page</a>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link">Contact</a>
+              </li>
+            </ul>
+            <ul class="navbar-nav">
+              <div class="search-right ml-lg-3">
+                <form class="search-box">
+                  <div class="input-search">
+                    <input
+                      type="search"
+                      name="s"
+                      placeholder="Enter Keyword"
+                      name="search"
+                      required="required"
+                      autofocus=""
+                      class="search-popup"
+                    />
+                  </div>
+                  <button type="submit" class="btn search-btn">
+                    <i class="fa fa-search" aria-hidden="true"></i>
+                  </button>
+                </form>
+              </div>
+            </ul>
+          </div>
+
+          <div class="cont-ser-position w3DarkLight">
+            <nav class="navigation">
+              <div class="theme-switch-wrapper">
+                <label class="theme-switch" for="checkbox">
+                  <input type="checkbox" id="checkbox" />
+                  <div class="mode-container">
+                    <i class="fa fa-sun"></i>
+                    <i class="fa fa-moon"></i>
+                  </div>
+                </label>
+              </div>
+            </nav>
+          </div>
+        </nav>
+      </div>
+    </section>
 
     <section class="carousel">
       <div
@@ -264,16 +263,18 @@
       </div>
     </section>
 
-    <section class="greeting">
-      <div class="container">
-        <h2>Welcome to <span>Studious</span></h2>
+    <section class="greeting py-5">
+      <div class="container py-md-5 py-4">
+        <div class="greeting__title text-center mx-auto mb-5 pb-sm-4">
+          <h2>Welcome to <span>Studious</span></h2>
+        </div>
         <div class="row text-center">
           <div class="col-lg-4 col-sm-6">
             <div class="greeting__item">
               <span class="fa fa-graduation-cap" aria-hidden="true"></span>
               <div class="greeting__info">
                 <a href="services">
-                  <h3 class="greeting__title">Trending Courses</h3>
+                  <h3>Trending Courses</h3>
                 </a>
                 <p class="greeting__text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit sed do
@@ -282,12 +283,12 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-sm-6">
+          <div class="col-lg-4 col-sm-6 mt-sm-0 mt-5">
             <div class="greeting__item">
               <span class="fa fa-users" aria-hidden="true"></span>
               <div class="greeting__info">
                 <a href="services">
-                  <h3 class="greeting__title">Certified Teachers</h3>
+                  <h3>Certified Teachers</h3>
                 </a>
                 <p class="greeting__text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit sed do
@@ -296,12 +297,12 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-4 col-sm-6">
+          <div class="col-lg-4 col-sm-6 mt-sm-0 mt-5">
             <div class="greeting__item">
               <span class="fa fa-book" aria-hidden="true"></span>
               <div class="greeting__info">
                 <a href="services">
-                  <h3 class="greeting__title">Books & Library</h3>
+                  <h3>Books & Library</h3>
                 </a>
                 <p class="greeting__text">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit sed do
@@ -314,50 +315,64 @@
       </div>
     </section>
 
-    <section class="services">
-      <div class="container">
+    <section class="services py-5">
+      <div class="container py-md-5 py-4">
         <div class="services__content">
           <div class="row">
-            <div class="col-6">
-              <div class="services__item">
-                <i
-                  class="fa fa-american-sign-language-interpreting"
-                  aria-hidden="true"
-                ></i>
+            <div class="col-xl-4"></div>
 
-                <div class="icon-info">
-                  <h5>Flexible Classes</h5>
-                  <p>Lorem ipsum dolor sit amet, dolor elit.</p>
+            <div class="col-xl-8">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="services__item">
+                    <div>
+                      <i
+                        class="fa fa-american-sign-language-interpreting"
+                        aria-hidden="true"
+                      ></i>
+                    </div>
+
+                    <div class="services__info">
+                      <h5>Flexible Classes</h5>
+                      <p>Lorem ipsum dolor sit amet, dolor elit.</p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="services__item">
-                <i class="fa fa-download" aria-hidden="true"></i>
+                <div class="col-md-6 mt-md-0 mt-4">
+                  <div class="services__item">
+                    <div>
+                      <i class="fa fa-download" aria-hidden="true"></i>
+                    </div>
 
-                <div class="icon-info">
-                  <h5>Offline Mode</h5>
-                  <p>Lorem ipsum dolor sit amet, dolor elit.</p>
+                    <div class="services__info">
+                      <h5>Offline Mode</h5>
+                      <p>Lorem ipsum dolor sit amet, dolor elit.</p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="services__item">
-                <i class="fa fa-headphones" aria-hidden="true"></i>
+                <div class="col-md-6 pt-md-2 mt-4">
+                  <div class="services__item">
+                    <div>
+                      <i class="fa fa-headphones" aria-hidden="true"></i>
+                    </div>
 
-                <div class="icon-info">
-                  <h5>Educator Help</h5>
-                  <p>Lorem ipsum dolor sit amet, dolor elit.</p>
+                    <div class="services__info">
+                      <h5>Educator Help</h5>
+                      <p>Lorem ipsum dolor sit amet, dolor elit.</p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <div class="col-6">
-              <div class="services__item">
-                <i class="fa fa-play-circle" aria-hidden="true"></i>
+                <div class="col-md-6 pt-md-2 mt-4">
+                  <div class="services__item">
+                    <div>
+                      <i class="fa fa-play-circle" aria-hidden="true"></i>
+                    </div>
 
-                <div class="icon-info">
-                  <h5>Online Classes</h5>
-                  <p>Lorem ipsum dolor sit amet, dolor elit.</p>
+                    <div class="services__info">
+                      <h5>Online Classes</h5>
+                      <p>Lorem ipsum dolor sit amet, dolor elit.</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -397,5 +412,17 @@
       integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
       crossorigin="anonymous"
     ></script>
+
+    <script>
+      $(window).on("scroll", function () {
+        var scroll = $(window).scrollTop();
+
+        if (scroll >= 80) {
+          $("#site-header").addClass("nav-fixed");
+        } else {
+          $("#site-header").removeClass("nav-fixed");
+        }
+      });
+    </script>
   </body>
 </html>
