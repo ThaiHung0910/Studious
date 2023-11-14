@@ -15,10 +15,10 @@ body {
 :root {
   --primary-color: #0d369f;
   --secondary-color: #ff6e65;
-  /* --logo-color: #0d369f; */
   --heading-color: #060606;
   --bg-color: #fff;
   --font-color: #707070;
+  --box-shadow-color: rgb(4 20 69 / 10%);
 }
 
 li {
@@ -35,12 +35,51 @@ p {
   line-height: 28px;
   color: var(--font-color);
   letter-spacing: 0.4px;
+  margin: 0;
+  padding: 0;
 }
 
 @media (min-width: 1280px) {
   .container {
     max-width: 1200px;
   }
+}
+
+.title {
+  padding-bottom: 24px;
+  margin-bottom: 48px;
+}
+.title h3 {
+  font-size: 40px;
+  color: var(--heading-color);
+  text-align: center;
+  position: relative;
+  line-height: 50px;
+  font-weight: 600;
+}
+
+.title h3 span {
+  color: var(--secondary-color);
+}
+
+.title h3::before {
+  left: -20px;
+  bottom: -8px;
+}
+
+.title h3::after {
+  left: 20px;
+  bottom: -15px;
+}
+.title h3:before,
+.title h3::after {
+  content: "";
+  background: var(--font-color);
+  width: 60px;
+  height: 2px;
+  position: absolute;
+  right: 0;
+  margin: 0 auto;
 }
 
 /* Header */
@@ -490,9 +529,6 @@ a.navbar-brand:hover {
   background: url(../img/bg3.jpg) no-repeat bottom / cover;
 }
 
-.services .container {
-}
-
 .services__item {
   display: flex;
   align-items: center;
@@ -524,3 +560,72 @@ a.navbar-brand:hover {
 }
 
 /* Services */
+
+/* Number */
+.number .title {
+  max-width: 700px;
+}
+.number .title p {
+  margin-top: 24px;
+  padding-top: 8px;
+}
+
+.timer {
+  font-size: 46px;
+  color: var(--heading-color);
+  font-weight: 600;
+}
+.number__text {
+  text-transform: uppercase;
+  color: var(--heading-color);
+}
+/* Number */
+
+/* Feedback */
+.feedback__item {
+  background: var(--bg-color);
+  border-radius: 4px;
+  box-shadow: 0 20px 62px var(--box-shadow-color);
+  padding: 32px;
+}
+.feedback__item i {
+  font-size: 22px;
+  color: var(--secondary-color);
+  line-height: 0.8;
+}
+
+.feedback__item img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+  /* margin-right: 10px; */
+}
+
+.feedback__info {
+  /* display: flex; */
+  display: grid;
+  grid-template-columns: 0.3fr 1fr;
+  grid-gap: 5px;
+  align-items: center;
+  margin-top: 1.5em;
+}
+
+.feedback__info h5 {
+  margin: 0;
+  font-weight: 600;
+  line-height: 16px;
+}
+.feedback__info p {
+  font-size: 13px;
+  color: var(--font-color);
+}
+/* Feedback */
+
+/* Intructors */
+.instructors__item {
+  box-shadow: 0 20px 62px var(--box-shadow-color);
+  padding: 10px;
+  background: var(--bg-color-2);
+  border-radius: 8px;
+}
+/* Intructors */
