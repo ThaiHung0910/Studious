@@ -37,7 +37,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="header">
+    <section class="header">
       <div class="header__top">
         <div class="container-fluid">
           <div
@@ -89,9 +89,9 @@
           </div>
         </div>
       </div>
-    </header>
+    </section>
 
-    <section id="site-header" class="header__nav fixed-top">
+    <header id="site-header" class="header__nav fixed-top">
       <div class="container-fluid">
         <nav class="navbar navbar-expand-lg">
           <a class="navbar-brand d-flex align-items-center" href="#">
@@ -164,57 +164,48 @@
             </ul>
           </div>
 
-          <div class="cont-ser-position w3DarkLight">
-            <nav class="navigation">
-              <div class="theme-switch-wrapper">
-                <label class="theme-switch" for="checkbox">
-                  <input type="checkbox" id="checkbox" />
-                  <div class="mode-container">
-                    <i class="fa fa-sun"></i>
-                    <i class="fa fa-moon"></i>
-                  </div>
-                </label>
+          <div class="header__theme">
+            <label class="header__switch" for="checkbox">
+              <input type="checkbox" id="checkbox" />
+              <div class="header__icon">
+                <i class="fa-regular fa-sun"></i>
+                <i class="fa-regular fa-moon"></i>
               </div>
-            </nav>
+            </label>
           </div>
         </nav>
       </div>
-    </section>
+    </header>
 
     <section class="carousel">
-      <div
-        id="carouselExampleCaptions"
-        class="carousel slide"
-        data-ride="carousel"
-      >
-        <ol class="carousel-indicators">
-          <li
-            data-target="#carouselExampleCaptions"
-            data-slide-to="0"
-            class="active"
-          ></li>
-          <li data-target="#carouselExampleCaptions" data-slide-to="1"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <div class="container">
-              <div class="carousel__content">
-                <h5>Master the Skills to Drive your Career</h5>
-                <a class="btn btn-style mt-sm-5 mt-4" href="about">
-                  Know More
-                  <i class="fa fa-arrow-right ml-2" aria-hidden="true"></i
-                ></a>
+      <div class="owl-one owl-carousel owl-theme">
+        <div class="carousel__content">
+          <div class="carousel__item item1">
+            <div class="carousel__info">
+              <div class="container">
+                <div class="carousel__inner">
+                  <h5>Master the Skills to Drive your Career</h5>
+                  <a class="btn btn-style mt-sm-5 mt-4" href="about">
+                    Know More
+                    <i class="fa fa-arrow-right ml-2" aria-hidden="true"></i
+                  ></a>
+                </div>
               </div>
             </div>
           </div>
-          <div class="carousel-item">
-            <div class="container">
-              <div class="carousel__content">
-                <h5>Studious is the best choice for everyone</h5>
-                <a class="btn btn-style mt-sm-5 mt-4" href="about">
-                  Know More
-                  <i class="fa fa-arrow-right ml-2" aria-hidden="true"></i
-                ></a>
+        </div>
+
+        <div class="carousel__content">
+          <div class="carousel__item item2">
+            <div class="carousel__info">
+              <div class="container">
+                <div class="carousel__inner">
+                  <h5>Studious is the best choice for everyone</h5>
+                  <a class="btn btn-style mt-sm-5 mt-4" href="about">
+                    Know More
+                    <i class="fa fa-arrow-right ml-2" aria-hidden="true"></i
+                  ></a>
+                </div>
               </div>
             </div>
           </div>
@@ -394,7 +385,7 @@
           <div class="col-lg-3 col-sm-6">
             <div class="counter">
               <div
-                class="timer count-title count-number"
+                class="timer count-number"
                 data-to="6300"
                 data-speed="1500"
               ></div>
@@ -408,12 +399,12 @@
           <div class="col-lg-3 col-sm-6 mt-sm-0 mt-4">
             <div class="counter">
               <div
-                class="timer count-title count-number"
+                class="timer count-number"
                 data-to="638"
                 data-speed="1500"
               ></div>
+              <p class="number__text">Total courses</p>
             </div>
-            <p class="number__text">Total courses</p>
             <!-- <div class="number__item">
               <span class="counter">638</span>
               <p>Total courses</p>
@@ -423,26 +414,26 @@
           <div class="col-lg-3 col-sm-6 mt-sm-0 mt-4">
             <div class="counter">
               <div
-                class="timer count-title count-number"
+                class="timer count-number"
                 data-to="7600"
                 data-speed="1500"
               ></div>
+              <p class="number__text">Successful students</p>
             </div>
-            <p class="number__text">Successful students</p>
             <!-- <div class="number__item">
               <span class="counter">7,600</span>
               <p>Successful students</p>
             </div> -->
           </div>
           <div class="col-lg-3 col-sm-6 mt-sm-0 mt-4">
-            <div class="counter">
+            <div class="counter border-right-0">
               <div
-                class="timer count-title count-number"
+                class="timer count-number"
                 data-to="36"
                 data-speed="1500"
               ></div>
+              <p class="number__text">Languages</p>
             </div>
-            <p class="number__text">Languages</p>
             <!-- <div class="number__item">
               <span class="counter">36</span>
               <p>Languages</p>
@@ -516,48 +507,310 @@
           <h3>World Class <span>Instructors </span></h3>
         </div>
 
-        <div class="row">
+        <div class="row text-center">
           <div class="col-lg-3 col-sm-6">
             <div class="instructors__item">
-              <img src="./img/team1.jpg" class="card-img-top" alt="" />
-              <div class="card-body">
-                <h5>Olive Yew</h5>
-                <p class="card-text">Teaches Design</p>
+              <div class="instructors__img">
+                <img src="./img/team1.jpg" class="img-fluid" alt="" />
+                <div class="instructors__link">
+                  <div class="instructors__logo">
+                    <a>
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a class="mx-2">
+                      <i class="fa-brands fa-twitter"></i>
+                    </a>
+
+                    <a>
+                      <i class="fab fa-google-plus-g"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="instructors__info">
+                <h5><a href="">Olive Yew</a></h5>
+                <span>Teaches Design</span>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-sm-6">
+          <div class="col-lg-3 col-sm-6 mt-lg-0 mt-5">
             <div class="instructors__item">
-              <img src="./img/team2.jpg" class="card-img-top" alt="" />
-              <div class="card-body">
-                <h5>Olive Yew</h5>
-                <p class="card-text">Teaches Design</p>
+              <div class="instructors__img">
+                <img src="./img/team2.jpg" class="img-fluid" alt="" />
+                <div class="instructors__link">
+                  <div class="instructors__logo">
+                    <a>
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a class="mx-2">
+                      <i class="fa-brands fa-twitter"></i>
+                    </a>
+
+                    <a>
+                      <i class="fab fa-google-plus-g"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="instructors__info">
+                <h5><a href="">Aida Joe </a></h5>
+
+                <span>UI/UX Designer</span>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-sm-6">
+          <div class="col-lg-3 col-sm-6 mt-lg-0 mt-5">
             <div class="instructors__item">
-              <img src="./img/team3.jpg" class="card-img-top" alt="" />
-              <div class="card-body">
-                <h5>Olive Yew</h5>
-                <p class="card-text">Teaches Design</p>
+              <div class="instructors__img">
+                <img src="./img/team3.jpg" class="img-fluid" alt="" />
+                <div class="instructors__link">
+                  <div class="instructors__logo">
+                    <a>
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a class="mx-2">
+                      <i class="fa-brands fa-twitter"></i>
+                    </a>
+
+                    <a>
+                      <i class="fab fa-google-plus-g"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="instructors__info">
+                <h5><a href="">Teri Dac </a></h5>
+
+                <span>Teaches Skills</span>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-sm-6">
+          <div class="col-lg-3 col-sm-6 mt-lg-0 mt-5">
             <div class="instructors__item">
-              <img src="./img/team4.jpg" class="card-img-top" alt="" />
-              <div class="card-body">
-                <h5>Olive Yew</h5>
-                <p class="card-text">Teaches Design</p>
+              <div class="instructors__img">
+                <img src="./img/team4.jpg" class="img-fluid" alt="" />
+                <div class="instructors__link">
+                  <div class="instructors__logo">
+                    <a>
+                      <i class="fa-brands fa-facebook-f"></i>
+                    </a>
+
+                    <a class="mx-2">
+                      <i class="fa-brands fa-twitter"></i>
+                    </a>
+
+                    <a>
+                      <i class="fab fa-google-plus-g"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+
+              <div class="instructors__info">
+                <h5><a href="">Anton Bne </a></h5>
+
+                <span>Web Designer</span>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="contact"></section>
-    <section class="footer"></section>
+
+    <section class="contact pb-5">
+      <div class="container pb-md-5 pb-4 mb-5">
+        <div class="row align-items-center justify-content-between">
+          <div class="col-lg-5 mb-lg-0 mb-4 text-center">
+            <img
+              src="./img/image.png"
+              alt=""
+              class="img-fluid img-responsive m-auto"
+            />
+          </div>
+          <div class="col-lg-7 pr-lg-5">
+            <div class="contact__right">
+              <h3 class="mb-sm-3 mb-2">
+                Not Sure Where to Begin? <br />Contact Now, We will Help you
+              </h3>
+              <p>
+                Consectetur adipiscing elit. Aliquam sit amet efficitur
+                tortor.Uspendisse efficitur orci urna. In et augue ornare,
+                tempor massa in, luctus sapien.
+              </p>
+              <a class="btn btn-style">Contact Us</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer mt-5 pt-5">
+      <div class="footer__wrap">
+        <div class="container">
+          <div class="footer__content">
+            <div class="footer__subscribe">
+              <div class="row align-items-center">
+                <div class="col-md-6 footer__text">
+                  <h4 class="mb-lg-2">Subscribe Us to join our Community</h4>
+                  <p>Newsletter</p>
+                </div>
+                <div class="col-md-6 mt-md-0 mt-4">
+                  <form action="" method="post" class="footer__form">
+                    <input
+                      type="email"
+                      class="form-control"
+                      name="Email"
+                      placeholder="Enter your email"
+                    />
+                    <button class="btn" type="submit">Send</button>
+                  </form>
+                </div>
+              </div>
+            </div>
+
+            <div class="row footer__links">
+              <div class="col-lg-2 col-sm-6">
+                <div class="footer__item footer__left">
+                  <h6 class="">Archives</h6>
+                  <ul>
+                    <li>
+                      <a href="https://wp.w3layouts.com/studious/2021/04/"
+                        >April 2021</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div class="col-lg-3 col-sm-6 pl-lg-5 mt-sm-0 mt-4">
+                <div class="footer__item footer__left">
+                  <h6 class="">Categories</h6>
+                  <ul>
+                    <li class="cat-item cat-item-2">
+                      <a
+                        href="https://wp.w3layouts.com/studious/category/business/"
+                        >Business</a
+                      >
+                    </li>
+                    <li class="cat-item cat-item-3">
+                      <a
+                        href="https://wp.w3layouts.com/studious/category/creative/"
+                        >Creative</a
+                      >
+                    </li>
+                    <li class="cat-item cat-item-4">
+                      <a
+                        href="https://wp.w3layouts.com/studious/category/design/"
+                        >Design</a
+                      >
+                    </li>
+                    <li class="cat-item cat-item-5">
+                      <a href="https://wp.w3layouts.com/studious/category/food/"
+                        >Food</a
+                      >
+                    </li>
+                    <li class="cat-item cat-item-6">
+                      <a
+                        href="https://wp.w3layouts.com/studious/category/industry/"
+                        >Industry</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <div
+                class="col-lg-3 col-sm-6 mt-lg-0 mt-sm-5 mt-4 footer__contact"
+              >
+                <div class="footer__item">
+                  <h6>Contact</h6>
+                  <div class="footer__inner">
+                    <div>
+                      <i class="fa-regular fa-envelope"></i>
+                      <a href="mailto:info@example.com">info@example.com</a>
+                    </div>
+
+                    <div>
+                      <i class="fa fa-phone"></i>
+                      <a href="tel:+44-000-888-999">+44-000-888-999</a>
+                    </div>
+
+                    <div>
+                      <p>
+                        <i class="fa fa-map-marker-alt"></i>
+                        London, 235 Terry, 10001
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-sm-6 pl-lg-5 mt-lg-0 mt-sm-5 mt-4">
+                <div class="footer__item footer__right">
+                  <h6 class="FooterAbout">About</h6>
+                  <p>
+                    Sed ut perspiciatis unde omnis iste natus error sit
+                    voluptatem accusantium doloremque laudantium, totam rem
+                    aperiam, eaque ipsa quae ab.
+                  </p>
+                  <div class="footer__inner">
+                    <ul class="footer__social">
+                      <li>
+                        <a href="https://www.facebook.com/w3layouts/"
+                          ><i class="fab fa-facebook-f"></i
+                        ></a>
+                      </li>
+
+                      <li>
+                        <a href="https://in.linkedin.com/company/w3layouts"
+                          ><i class="fab fa-linkedin-in"></i
+                        ></a>
+                      </li>
+
+                      <li>
+                        <a href="https://twitter.com/W3layouts"
+                          ><i class="fab fa-twitter"></i
+                        ></a>
+                      </li>
+
+                      <li>
+                        <a href="https://w3layouts.com/"
+                          ><i class="fab fa-google-plus-g"></i
+                        ></a>
+                      </li>
+
+                      <li>
+                        <a href="https://w3layouts.com/"
+                          ><i class="fab fa-github"></i
+                        ></a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer__copyright">
+        <div class="container">
+          <div class="footer__inner">
+            <p>
+              &copy; 2023 Studious. All Rights Reserved | WordPress Theme by
+              <a href="https://w3layouts.com/">W3Layouts. </a>
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <button class="backToTop cd-top text-replace js-cd-top">
+      <i class="fa fa-level-up-alt"></i>
+    </button>
 
     <script
       src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
@@ -586,6 +839,14 @@
       integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
       crossorigin="anonymous"
     ></script>
+
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+      integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
     <script src="./js/counter.js"></script>
 
     <script>
@@ -599,11 +860,46 @@
         }
       });
     </script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-one").owlCarousel({
+          loop: true,
+          margin: 0,
+          nav: false,
+          responsiveClass: true,
+          autoplay: true,
+          autoplayTimeout: 5000,
+          autoplaySpeed: 1000,
+          autoplayHoverPause: false,
+          responsive: {
+            0: {
+              items: 1,
+              nav: false,
+            },
+            480: {
+              items: 1,
+              nav: false,
+            },
+            667: {
+              items: 1,
+              nav: false,
+            },
+            1000: {
+              items: 1,
+              nav: false,
+            },
+          },
+        });
+      });
+    </script>
     <!-- <script>
       $(".counter").counterUp({
         delay: 100,
         time: 1500,
       });
     </script> -->
+    <script src="./js/backToTop/main.js"></script>
+    <script src="./js/backToTop/util.js"></script>
+    <script src="./js/themeChange.js"></script>
   </body>
 </html>
