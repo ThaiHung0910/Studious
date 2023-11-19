@@ -353,7 +353,7 @@ a.dropdown-item:hover {
 
 .navbar-nav form input {
   font-size: 15px;
-  color: var(--heading-color);
+  /* color: var(--heading-color); */
   outline: none;
   background: transparent;
   border: none;
@@ -678,6 +678,11 @@ input:checked + .header__icon i.fa-moon {
   align-items: center;
   padding: 3em 0;
   min-height: 90vh;
+}
+
+.carousel__item:active {
+  cursor: -webkit-grab;
+  cursor: grab;
 }
 
 .carousel__item::before {

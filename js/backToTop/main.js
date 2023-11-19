@@ -9,6 +9,12 @@
 	if( backTop ) {
 		//update back to top visibility on scrolling
 		window.addEventListener("scroll", function(event) {
+			var windowTop = window.scrollY || document.documentElement.scrollTop;
+			if(offset > windowTop){
+				document.getElementById('backToTop').style.visibility = "hidden";
+			}else{
+				document.getElementById('backToTop').style.visibility = "visible";
+			}
 			if( !scrolling ) {
 				scrolling = true;
 				(!window.requestAnimationFrame) ? setTimeout(checkBackToTop, 250) : window.requestAnimationFrame(checkBackToTop);
