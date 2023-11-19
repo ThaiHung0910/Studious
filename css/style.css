@@ -353,7 +353,7 @@ a.dropdown-item:hover {
 
 .navbar-nav form input {
   font-size: 15px;
-  /* color: var(--heading-color); */
+  color: var(--heading-color);
   outline: none;
   background: transparent;
   border: none;
@@ -361,6 +361,10 @@ a.dropdown-item:hover {
   width: 100%;
   border-radius: 30px;
   border: 2px solid #eee;
+}
+
+.navbar-nav form input::placeholder {
+  color: var(--heading-color);
 }
 
 .nav-fixed .nav-item.dropdown::after {
