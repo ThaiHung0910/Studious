@@ -1,4 +1,4 @@
-const toggleSwitch = document.querySelector('.header__switch');
+const toggleSwitch = document.querySelector('.header__switch input[type="checkbox"]');
 const currentTheme = localStorage.getItem('theme');
 if (currentTheme) {
     document.documentElement.setAttribute('data-theme', currentTheme);

@@ -298,13 +298,15 @@ a.navbar-brand:hover {
   z-index: 1001;
 }
 
-.navbar-expand-lg .navbar-nav .nav-item.dropdown {
+/* .navbar-expand-lg .navbar-nav .nav-item.dropdown {
   padding-right: 20px;
+} */
+
+.dropdown-toggle::after {
+  /* display: none; */
+  margin-left: 0;
 }
-/* .dropdown-toggle::after {
-  display: none;
-}
-.nav-item.dropdown::after {
+/* .nav-item.dropdown::after {
   content: "\f107";
   font: normal normal normal 14px/1 FontAwesome;
   font-size: 11px;
@@ -352,6 +354,7 @@ a.dropdown-item:hover {
 .navbar-nav form input {
   font-size: 15px;
   color: var(--heading-color);
+  outline: none;
   background: transparent;
   border: none;
   padding: 10px 35px 10px 20px;
@@ -611,9 +614,9 @@ input:checked + .header__icon i.fa-moon {
     color: var(--primary-color);
   }
 
-  .navbar-expand-lg .navbar-nav .nav-item.dropdown {
+  /* .navbar-expand-lg .navbar-nav .nav-item.dropdown {
     padding-right: 15px;
-  }
+  } */
   .nav-item.dropdown::after {
     top: 18px;
   }
