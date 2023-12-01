@@ -978,6 +978,9 @@ input:checked + .header__icon i.fa-moon {
   .number__text {
     font-size: 15px;
   }
+  .counter {
+    border-right: none;
+  }
 }
 
 /* Number */
