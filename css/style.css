@@ -1448,7 +1448,11 @@ input:checked + .header__icon i.fa-moon {
     letter-spacing: 0.4px;
   }
 }
-
+@media (max-width: 360px) {
+  .footer__links {
+    margin-top: 300px;
+  }
+}
 /* Footer */
 
 /* Back to Top */
