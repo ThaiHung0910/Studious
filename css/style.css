@@ -27,6 +27,7 @@ body {
   --border-color-light: #eee;
   --dropdown-color: rgb(112, 112, 112);
   --placeholder-color: #6c757d;
+  --placeholder-email-color: #6c757d;
 }
 [data-theme="dark"] {
   --primary-color: #4867b0;
@@ -42,6 +43,7 @@ body {
   --border-color-light: rgba(255, 255, 255, 0.2);
   --dropdown-color: rgb(183, 183, 183);
   --placeholder-color: #eee;
+  --placeholder-email-color: rgba(255, 255, 255, 0.2);
 }
 
 ul,
@@ -1201,9 +1203,9 @@ input:checked + .header__icon i.fa-moon {
   border: 1px solid var(--border-color-light);
 }
 
-.form-control::placeholder {
-  color: var(--placeholder-color);
-  opacity: 1;
+.footer__form .form-control::placeholder {
+  color: var(--placeholder-email-color);
+  /* opacity: 1; */
 }
 
 .footer__form .btn {
@@ -1453,6 +1455,14 @@ input:checked + .header__icon i.fa-moon {
     margin-top: 300px;
   }
 }
+
+@media (max-width: 320px) {
+  .footer__text h4 {
+    font-size: 26px;
+    line-height: 31px;
+  }
+}
+
 /* Footer */
 
 /* Back to Top */
