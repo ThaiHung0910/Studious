@@ -533,7 +533,7 @@ input:checked + .header__icon i.fa-moon {
     font-size: 14px;
   }
 }
-@media only screen and (max-width: 991px) {
+@media only screen and (max-width: 991.98px) {
   .header {
     display: none;
   }
@@ -971,7 +971,7 @@ input:checked + .header__icon i.fa-moon {
   color: var(--heading-color);
 }
 
-@media (max-width: 991px) {
+@media (max-width: 991.98px) {
   .timer {
     font-size: 35px;
   }
@@ -1335,7 +1335,7 @@ input:checked + .header__icon i.fa-moon {
   line-height: 20px;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 991.98px) {
   .footer__subscribe {
     margin: 0 32px;
   }
